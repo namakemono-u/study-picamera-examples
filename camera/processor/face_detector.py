@@ -41,7 +41,7 @@ class FaceDetector(object):
         faceCounter=0
         for (x,y,w,h) in faces:
             cv2.rectangle(frame,(x,y),(x+w,y+h),(255,255,0),2)
-            faceCounter++
+            faceCounter = faceCounter+1
             
         putText(frame, faceCounter, (0,0), FONT_HERSHEY_PLAIN, 15, (0, 0, 255))
 
